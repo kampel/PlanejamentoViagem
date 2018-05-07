@@ -4,8 +4,9 @@ using System.Text;
 
 namespace PlanejamentoViagem.Classes
 {
-    class Endereco
+    public class Endereco
     {
+        public int IdEndereco { get; set; }
         public string Pais { get; set; }
         public string Estado { get; set; }
         public string Cidade { get; set; }
@@ -13,5 +14,8 @@ namespace PlanejamentoViagem.Classes
         public string Logradouro { get; set; }
         public string Complemento { get; set; }
         public string Bairro { get; set; }
+
+        public Viajante Viajante { get; set; }
+        public LocalInteresse LocalInteresse { get; set; }
     }
 }
